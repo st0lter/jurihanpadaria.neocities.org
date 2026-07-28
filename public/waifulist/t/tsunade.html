@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- GOOGLE FONTS SECTION -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- FAVICON SECTION -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../images/favicon/site.webmanifest">
+
+    <!-- ICONS SECTION -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <title>Tsunade Senju - Waifu List</title>
+</head>
+<body>
+    <header>
+        <h1>Tsunade Senju</h1>
+        <p>Words aren't the only thing that tell people what you're thinking</p>
+    </header>
+
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-label="Abrir menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="../../index.html" class="nav-link">Home</a></li>
+                <li><a href="../waifus.html" class="nav-link active">Waifus</a></li>
+                <li><a href="../../credits.html" class="nav-link">Credits</a></li>
+                <li><a href="../../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="search-wrapper">
+                <input type="text" id="searchBar" placeholder="Search your Waifu, Games or Animes..." oninput="filtrarWaifus()" autocomplete="off">
+                <div id="searchSuggestions" class="search-suggestions" aria-live="polite"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="waifu-profile">
+        <div class="waifu-info">
+            <h2>Profile</h2>
+            <p><strong class="fresh-sky">Origin:</strong> Naruto (Classic)</p>
+            <p><strong class="fresh-sky">Age:</strong> 51 (Naruto), 54-55 (Naruto Shippuden), 57 (The Last: Naruto the Movie), >70 (Boruto)</p>
+            <p><strong class="fresh-sky">Height:</strong> 163cm (5'6")</p>
+            <p><strong class="fresh-sky">Race:</strong> Human</p>
+            <p><strong class="fresh-sky">Occupation:</strong> Kunoichi, 5th Hokage.</p>
+            <p><strong class="fresh-sky">Personality:</strong> Kind, determined, loyal and protective.</p>
+            <p><strong class="fresh-sky">Appearance:</strong> Tsunade is a fair-skinned woman with brown eyes and straight blonde hair that parts above her forehead with shoulder-length bangs framing her face. While she kept her hair in a high ponytail during her youth, she later transitioned to wearing it in two loose ponytails that reach her lower back. A defining feature of her appearance is the Strength of a Hundred Seal, which manifests as a small violet diamond mark in the center of her forehead.</p>
+            <p>Her physical build is a significant part of her character's description; although she was considered flat-chested as an adolescent, she developed into a slender woman with a curvaceous figure and noticeably large breasts. Her bust measurement was famously noted by Jiraiya to be 106 centimeters, and she is widely regarded as the most beautiful kunoichi in the world.</p>
+            <p>A unique aspect of her appearance is her use of a permanent Transformation Technique to maintain her youthful look. Although she is in her fifties during the main series and over seventy in Boruto, she appears to be in her twenties without exerting any conscious effort, even while sleeping. Her true form—revealed only when her chakra is completely exhausted—is that of a frail, heavily wrinkled elderly woman, a condition exacerbated by the cellular strain of her various regeneration techniques.</p>
+            <p>In terms of clothing, Tsunade typically wears the following: A grass-green haori with the kanji for "gamble" (kake) printed on the back inside a red circle. A sleeveless grey blouse styled like a kimono, which is worn low to reveal her cleavage. Dark bluish-grey pants that match the broad obi sash used to hold her blouse closed. High-heeled black sandals that add approximately 5 cm to her height. Red nail polish on both her fingernails and toenails, paired with soft pink lipstick.</p>
+            
+            <p><strong class="fresh-sky">Notable Traits:</strong> Gambler, Short-Tempered, Protective, Hedonistic Lifestyle and Laziness.</p>
+        </div>
+
+        <div class="waifu-carousel">
+            <button class="carousel-btn" id="prevBtn" type="button" aria-label="Previous image">◀</button>
+            <div class="carousel-content">
+                <img id="profile-carousel-image" src="" alt="">
+                <div class="carousel-description">
+                    <h3 id="profile-carousel-title"></h3>
+                    <p id="profile-carousel-text"></p>
+                </div>
+
+                <div class="carousel-slides" aria-hidden="true">
+                    <div class="carousel-slide" data-game="Naruto (Classic/Shippuden)" data-text="Tsunade Senju using her main outfit throughout all the Naruto series. Seriously, you won't see her wearing any other clothes.">
+                        <img src="https://i.postimg.cc/pdtfgfhh/Tsunade.png" alt="A picture of Tsunade Senju">
+                    </div>
+                    
+                    <div class="carousel-slide" data-game="Naruto (Classic/Shippuden)" data-text="Tsunade Senju using her main outfit throughout all the Naruto series. Seriously, you won't see her wearing any other clothes.">
+                        <img src="https://i.postimg.cc/W4PGQGFq/Tsunade-alt.png" alt="A picture of Tsunade Senju">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn" id="nextBtn" type="button" aria-label="Next image">▶</button>
+        </div>
+    </section>
+
+    <section class="waifu-story">
+        <h2>Story</h2>
+        <h3>> The Princess of Konoha – A Child of Legendary Bloodlines</h3>
+        <p><strong><em>- How a spoiled grandchild of the First Hokage became a prodigy of Team Hiruzen -</em></strong></p>
+		<p>Tsunade Senju was born into greatness as the granddaughter of Hashirama Senju, the First Hokage, and Mito Uzumaki. Due to this prestigious lineage, she was often referred to as "Princess". As a child, she was heavily doted on by Hashirama, from whom she inherited a notorious gambling habit and a precious crystal necklace. Graduating from the Ninja Academy at the young age of 6, she was placed in a three-man cell with Jiraiya and Orochimaru, under the tutelage of Hiruzen Sarutobi. During these early years, she established herself as a fierce kunoichi with a short temper and monstrous raw strength, once nearly killing Jiraiya after catching him peeping at the hot springs.</p>
+
+        <h3>> The Rise of the Sannin – Glory Amidst the Second Great Ninja War</h3>
+        <p><strong><em>- The birth of a legend and the pioneering of medical ninjutsu -</em></strong></p>
+        <p>During the Second Shinobi World War, Tsunade and her teammates became famous for their incredible survival and combat skills. After they were the only ones to survive a battle against Hanzō of the Salamander, he granted them the title of Konoha's Legendary Sannin. Tsunade’s contributions were pivotal; she was hailed as the world's greatest medical-nin, frequently creating antidotes for the lethal poisons used by Chiyo of the Sand Village. It was during this period that she advocated for the revolutionary idea of placing a medical ninja in every four-man squad to increase mission survival rates.</p>
+
+        <h3>> The Shadows of Tragedy – A Life Defined by Grief and Phobia</h3>
+        <p><strong><em>- The loss of her loved ones and the years of wandering -</em></strong></p>
+        <p>Despite her battlefield success, Tsunade’s personal life was marred by devastating losses. On her brother Nawaki’s 12th birthday, she gave him their grandfather's necklace; he died in battle the very next day. Later, she fell in love with Dan Katō, who shared her dream of becoming Hokage to protect others. Tragedy struck again when Dan was mortally wounded in the war. Tsunade’s inability to save him despite her skills led her to develop hemophobia (a crippling fear of blood). Disillusioned with the world and the title of Hokage, she abandoned the life of a shinobi and left Konoha with Dan's niece, Shizune, spending years wandering as a "Legendary Sucker" due to her terrible gambling luck.</p>
+
+        <h3>> Accepting the Mantle – The Return of the Fifth Fire Shadow</h3>
+        <p><strong><em>- How a chance encounter with a "knucklehead ninja" healed her heart -</em></strong></p>
+        <p>Years later, after the death of the Third Hokage, Jiraiya and Naruto Uzumaki sought her out to become the Fifth Hokage. Initially, she mocked the title, calling it a "fool's job". However, Naruto’s determination to master the Rasengan and his refusal to give up on his dreams reminded her of Nawaki and Dan. After Naruto protected her from Kabuto Yakushi, she overcame her hemophobia and fought alongside Jiraiya against Orochimaru. Witnessing Naruto's "Will of Fire" inspired her to return to Konoha and officially accept the position of Godaime Hokage.</p>
+
+        <h3>> The Hokage's Legacy – Protecting the Village Through Despair</h3>
+        <p><strong><em>- Mentoring the next generation and surviving Pain's assault -</em></strong></p>
+        <p>As Hokage, Tsunade focused on healing the village and its people. She took Sakura Haruno as her apprentice, training her to become an elite medical-nin and a powerhouse in combat. During Pain’s assault on Konoha, Tsunade used her summon, Katsuyu, to transfer her chakra and heal every citizen simultaneously, a feat that exhausted her to the point of a long-term coma. Her leadership was characterized by a deep faith in the younger generation, often clashing with the village elders to protect Naruto and his future.</p>
+
+        <h3>> The Final Battle – Standing Tall Against the God of Shinobi</h3>
+        <p><strong><em>- Displaying the true power of the Strength of a Hundred Seal in the Fourth War -</em></strong></p>
+        <p>Upon awakening from her coma, Tsunade joined the Allied Shinobi Forces in the Fourth Great Ninja War. She stood on the front lines alongside the other four Kage to battle Madara Uchiha. Despite being bisected by Madara, her immense vitality and the Strength of a Hundred Seal allowed her to remain conscious and continue healing the other Kage. She was eventually saved by Orochimaru’s arrival and continued to support the alliance until the end of the war. After the conflict, she used Hashirama's cells to develop prosthetic arms for Naruto and Sasuke before eventually stepping down to let Kakashi Hatake become the Sixth Hokage.</p>
+
+        <h3>> The Wise Advisor – Guiding the New Era in Borut</h3>
+        <p><strong><em>Retiring into the shadows but remaining a fierce protector of Konoha</em></strong></p>
+        <p>In the era of Boruto, Tsunade is a retired veteran in her 70s, yet she maintains her youthful appearance through her transformation technique. Though she spends much of her time traveling, she remains a consultant for Naruto, the Seventh Hokage. She notably expressed great fury when she discovered that Naruto was keeping Mitsuki's identity as Orochimaru’s son a secret, showing that her past scars with her former teammate still linger. Despite her retirement, she continues to honor the "Will of Fire," attending memorials and assisting in coordination efforts when the village faces new threats like Kara or Isshiki Ōtsutsuki.</p>
+    </section>
+
+    <section class="waifu-gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <div>
+                <img src="https://i.postimg.cc/SKs90gQ0/Tsunade-expression.jpg" alt="Tsunade with a soft expression">
+                <p>The Princess and her soft look.</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/mrD9xmZZ/Tsunade-hokage.png" alt="Tsunade in the office">
+                <p>One smile a day, keeps depression away!</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/JnHB0tkw/Tsunade-activating-Byakugou.jpg" alt="Tsunade activating the Byakugou">
+                <p>Her master card - The Byakugou.</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/634GqTvJ/Tsunade-with-Byakugou.jpg" alt="Tsunade using the Byakugou">
+                <p>Tsunade using the Byakugou against Madara in the 4th Great War.</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/VLW0dxds/Tsunade-Appearance.jpg" alt="Tsunade's Young Appearance">
+                <p>Despite the age, she can still make a lot of young girls feel envy!</p>
+            </div>
+
+			<div>
+				<img src="https://i.postimg.cc/5tT5NKSn/Tsunade-meditating.jpg" alt="Tsunade thinking">
+				<p>Hard decisions, hard decisions...</p>
+			</div>
+
+            <div>
+                <img src="https://i.postimg.cc/5Nd8H5gn/Tsunade-eating.jpg" alt="Tsunade eating">
+                <p>Tsunade eating, eating, eating!</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/qMV2tcw1/Tsunade-low-quality.jpg" alt="Low Resolution Tsunade">
+                <p>Low Res Tsunade</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/RVLJNkN0/Tsunade-Appreciation.png" alt="Tsunade in Manga">
+                <p>Not just a princess, but also a queen!</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/Rhzq0dmf/Tsunade-by-Saburo-des.jpg" alt="Fanart of Tsunade by Saburo_des">
+                <p>Enhance! Artwork by <a href="https://x.com/saburo_des/status/2048605555883950315" target="_blank" rel="noreferrer noopener">@saburo_des</a></p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/Gt19pKRG/Tsunade-by-Sakulove-sssk.jpg" alt="Fanart of Tsunade by Sakulove_sssk">
+                <p>The Medic Team! Artwork by <a href="https://x.com/sakulove_sssk/status/1999764961904722250" target="_blank" rel="noreferrer noopener">@sakulove_sssk</a></p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/nrYr9mVW/Tsunade-by-Xuuikie-ashe.jpg" alt="">
+                <p>Hot Hags! Artwork by <a href="https://www.pixiv.net/en/artworks/134430030" target="_blank" rel="noreferrer noopener">xuuikie</a></p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/RFtN98jp/Tsunade-by-Draw-INK-2.jpg" alt="Fanart of Tsunade by Draw_INK2">
+                <p>I wouldn't mind being her company! Artwork by <a href="https://x.com/drawINK_2/status/2028942236663333100" target="_blank" rel="noreferrer noopener">@drawINK_2</a></p>
+            </div>
+            
+            <div>
+                <img src="https://i.postimg.cc/PJzJvDf3/Tsunade-by-Sleevmonkv.jpg" alt="Fanart of Tsunade by sleevmonkv">
+                <p>Injured? No problem. She's coming to rescue you! Artwork by <a href="https://x.com/Sleemonkv/status/2034676950053396807" target="_blank" rel="noreferrer noopener">@Sleemonkv</a></p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/PJkNqyHw/Tsunade-by-Pengan.jpg" alt="Fanart of Tsunade by Pengan">
+                <p>She may be a hag but, just like the wine, she gets better when she becomes older. Artwork by <a href="https://x.com/Pengan_/status/1836172223578587569" target="_blank" rel="noreferrer noopener">@Pengan_</a></p>
+            </div>
+
+            <div>
+				<img src="https://i.postimg.cc/QCkCK7Ny/Tsunade-Manga-Panel.jpg" alt="Tsunade smashing the wall">
+				<p>You wouldn't want to pick a fight with her, trust me.</p>
+            </div>
+            
+            <div>
+				<img src="https://i.postimg.cc/LXFZq2Bk/Tsunade-Legendary-Loser.png" alt="A picture of Tsunade being shown as 'The Legendary Loser'">
+				<p>Due to her extremely bad luck, she is also known as "The Legendary Loser".</p>
+            </div>
+            
+            <div>
+				<img src="https://i.postimg.cc/gJb6wmqq/Tsunade-Will-of-Fire.jpg" alt="Tsunade and the Will of Fire">
+				<p>A scorching determination.</p>
+            </div>
+
+            <div>
+                <img src="https://i.postimg.cc/k4PtVqFQ/Tsunade-Still-Standing.png" alt="Tsunade pose">
+                <p>Pose!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="waifu-games">
+        <h2>Animes / Games</h2>
+        <div class="games-covers">
+            <div>
+                <a href="https://www.crunchyroll.com/series/GY9PJ5KWR/naruto" target="_blank" rel="noopener noreferrer">
+                <img class="game-cover-img" src="https://i.postimg.cc/Z5Hncw7c/NARUTO-Tsunade-manga-cover.jpg" alt="Naruto Manga Cover" data-steam="#">
+                </a>
+                <p>Naruto</p>
+            </div>
+
+            <div>
+                <a href="https://www.crunchyroll.com/series/GYQ4MW246/naruto-shippuden" target="_blank" rel="noopener noreferrer">
+                <img class="game-cover-img" src="https://i.postimg.cc/qMtxW3VF/NARUTO-Shippuden-manga-cover.jpg" alt="Naruto Shippuden manga cover" data-steam="#">
+                </a>
+                <p>Naruto Shippuden</p>
+            </div>
+
+            <div>
+                <img class="game-cover-img" src="https://i.postimg.cc/kGbRkstL/NARUTO-Ultimate-Ninja2-game-cover.jpg" alt="Naruto Ultimate Ninja 2 cover" data-steam="#">
+                <p>Naruto: Ultimate Ninja 2</p>
+            </div>
+
+            <div>
+                <a href="https://store.steampowered.com/app/543870/NARUTO_SHIPPUDEN_Ultimate_Ninja_STORM_2/" target="_blank" rel="noreferrer noopener">
+                <img class="game-cover-img" src="https://i.postimg.cc/CxqnPSqv/NARUTO-ULTIMATE-NINJA-STORM-2-game-cover.jpg" alt="Naruto Ultimate Ninja Storm 2 cover" data-steam="#">
+                </a>
+                <p>NARUTO SHIPPUDEN: Ultimate Ninja Storm 2</p>
+            </div>
+
+            <div>
+                <a href="https://store.steampowered.com/app/633230/NARUTO_TO_BORUTO_SHINOBI_STRIKER/" target="_blank" rel="noreferrer noopener">
+                <img class="game-cover-img" src="https://i.postimg.cc/kgbR1qbT/NARUTO-TO-BORUTO-Shinobi-Striker-game-cover.jpg" alt="Naruto to Boruto: Shinobi Strker game cover" data-steam="#">
+                </a>
+                <p>Naruto to Boruto: Shinobi Striker</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+	<section class="content-section">
+        <section class="suggestions-section">
+			<p>Add your Waifu here! <a href="../../contact.html">Contact us</a> to submit a character for inclusion in the list.</p>
+		</section>
+		<div class="discord-widget">
+        <div>
+            <h2>Join us on Discord!</h2>
+            <p>Don't be shy! Join our community of retro-gaming today!</p>
+            <p>We sometimes have events and discussions about our favorite games, watch movies, anime and more!</p>
+            <p>Thanks!!!</p>
+        </div>
+        <div>
+            <iframe src="https://discord.com/widget?id=1265509683045859451&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+    </div>
+	</section>
+    
+
+    <footer>
+        <h2><em>Be water, my friend!</em></h2>
+        <img src="../../images/neocities.png" alt="Neocities logo">
+    </footer>
+
+    <!-- MODAL PARA IMAGENS EXPANDIDAS -->
+    <div id="imageModal" class="image-modal" aria-hidden="true">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose" aria-label="Fechar imagem expandida">
+                <span class="close-icon">✕</span>
+            </button>
+            <img id="modalImage" src="" alt="">
+            <div class="modal-description" id="modalDescription"></div>
+        </div>
+    </div>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

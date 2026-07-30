@@ -1141,3 +1141,152 @@ div.gallery-images img:hover {
   }
 }
 /* IMAGE MODAL / LIGHTBOX SECTION END */
+
+
+/* SUPPORTER SECTION */
+div.supporter, div.supporter-profile{
+  display: flex;
+  align-items: center;
+}
+div.supporter{
+  background: #222;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+div.supporter-profile{
+  padding-right: 10px;
+}
+/* SUPPORTER SECTION */
+div.supporters-list{
+  max-width: 1000px;
+  margin: 12px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px;
+}
+
+div.supporter{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.03);
+  padding: 12px 16px;
+  border-radius: 10px;
+}
+
+div.supporter-profile{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+div.supporter-profile img{
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #1B998B;
+  background-color: #111;
+}
+
+div.supporter-contact{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.supporter-name{
+  margin: 0;
+  color: #E4FDE1;
+  font-family: 'Kode Mono', Verdana;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.supporter-meta{
+  margin: 0;
+  color: #aaaaaa;
+  font-size: 0.9rem;
+}
+
+/* make supporters stack on narrow screens */
+@media (max-width: 640px){
+  div.supporter{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .supporter-name{ font-size: 1rem; }
+  div.supporter-profile img{ width: 56px; height: 56px; }
+}
+
+/* SUPPORTER SECTION END */
+
+/* Supporter title (aligned right on desktop) */
+.supporter-title{
+  display: inline-block;
+  min-width: 160px;
+  max-width: 320px;
+  text-align: center;
+  padding: 6px 10px;
+  border: 1px solid #EC058E;
+  color: #EC058E;
+  border-radius: 8px;
+  font-family: 'Kode Mono', Verdana;
+  align-self: center;
+  font-size: 0.95rem; /* slightly larger than supporter name */
+}
+
+@media (max-width: 640px){
+  .supporter-title{
+    align-self: stretch;
+    text-align: left;
+    border-width: 1px;
+    padding: 6px 8px;
+    margin-top: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Social icons inside supporter contact */
+.supporter-contact{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.supporter-actions{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.supporter-actions a{
+  color: #E4FDE1;
+  background: rgba(255,255,255,0.02);
+  padding: 6px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.supporter-actions a .bi{
+  font-size: 1rem;
+}
+
+/* smaller icons on mobile */
+@media (max-width: 420px){
+  .supporter-actions a{ padding: 4px; }
+  .supporter-actions a .bi{ font-size: 0.95rem; }
+}
+/* SUPPORTER SECTION END */
